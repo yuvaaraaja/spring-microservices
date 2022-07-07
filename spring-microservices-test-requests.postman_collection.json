@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "487ce5fe-75b8-4141-a005-fe47dde39689",
+		"name": "spring-microservices-test-requests",
+		"description": "spring-microservices-test-requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9191/departments/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"departmentName\" : \"IT\",\n\t\"departmentAddress\" : \"Everywhere\",\n\t\"departmentCode\" : \"ITROCKZZ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/departments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"departments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/users/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"firstName\" : \"Yuvaraj\",\r\n\t\"lastName\" : \"G\",\r\n\t\"emailId\" : \"yuvaraj2295@gmail.com\",\r\n\t\"departmentId\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
